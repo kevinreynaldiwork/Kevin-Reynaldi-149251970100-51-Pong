@@ -9,7 +9,6 @@ public class ScoreManager : MonoBehaviour
     public int rightScore;
     public int maxScore;
     public BallController ball;
-
     public void AddRightScore(int increment)
     {
         rightScore += increment;
@@ -19,7 +18,6 @@ public class ScoreManager : MonoBehaviour
             GameOver();
         }
     }
-
     public void AddLeftScore(int increment)
     {
         leftScore += increment;
@@ -29,7 +27,6 @@ public class ScoreManager : MonoBehaviour
             GameOver();
         }
     }
-
     public void GameOver()
     {
         SceneManager.LoadScene("MainMenu");
